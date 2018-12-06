@@ -1,4 +1,4 @@
-package com.bestpay;
+package com.best;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
