@@ -1,24 +1,26 @@
 # springboot-web
 springboot-web项目
 
-一：集成框架
-    1.集成springcload
-        Spring Cloud专注于为典型用例提供良好的开箱即用体验，并为其他用户提供可扩展性机制。
-        分布式/版本化配置
-        服务注册和发现
-        路由
-        服务到服务电话
-        负载均衡
-        断路器
-        全球锁
-        领导选举和集群国家
-        分布式消息
-        子项目：
-        Spring Cloud Config
-        由git存储库支持的集中式外部配置管理。配置资源直接映射到Spring，Environment但如果需要，可以由非Spring应用程序使用。
-        Spring Cloud Netflix
-        与各种Netflix OSS组件集成（Eureka，Hystrix，Zuul，Archaius等）。
-        Spring Cloud Bus
+**一：集成框架**
+
+
+**1.集成springcload**
+            Spring Cloud专注于为典型用例提供良好的开箱即用体验，并为其他用户提供可扩展性机制。
+            分布式/版本化配置
+            服务注册和发现
+            路由
+            服务到服务电话
+            负载均衡
+            断路器
+            全球锁
+            领导选举和集群国家
+            分布式消息
+            子项目：
+            Spring Cloud Config
+            由git存储库支持的集中式外部配置管理。配置资源直接映射到Spring，Environment但如果需要，可以由非Spring应用程序使用。
+            Spring Cloud Netflix
+            与各种Netflix OSS组件集成（Eureka，Hystrix，Zuul，Archaius等）。
+            Spring Cloud Bus
 
 
 **springboot集成mybatis：**
@@ -35,12 +37,13 @@ springboot-web项目
                        @MapperScan(value = "com.best.dao") OR   @Mapper
            二：注解版
                     使用@select,@update,@insert,@delete等注解
+        
                     
 **springboot集成JPA：**
             1.编写实体类和表进行对象关系映射
             2.编写Dao集成JpaRepository(JPA提供的操作类)
             
-            
+        
 **springboot集成springbatch**         
              1.介绍：  
                     轻量级，全面的批处理框架，旨在开发对企业系统日常运营至关重要的强大批处理应用程序。
@@ -55,8 +58,15 @@ springboot-web项目
                     启动/停止/重新启动
                     重试/跳过
                     基于Web的管理界面（Spring Cloud Data Flow）
+           
             
-
+**springboot集成springbootAdmin**
+            1.介绍：
+                    Spring Boot Admin 是一个针对spring-boot的actuator接口进行UI美化封装的监控工具。他可以：
+                    在列表中浏览所有被监控spring-boot项目的基本信息，详细的Health信息、内存信息、JVM信息、
+                    垃圾回收信息、各种配置信息（比如数据源、缓存列表和命中率）等，还可以直接修改logger的level
+            ps:开启这个需要在搭建一个springBootAdmin服务        
+                    
 
 QPS:
     1.内置tomcat不能与外置tomcat同时存在， <scope>provided</scope>

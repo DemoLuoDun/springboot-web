@@ -31,6 +31,18 @@ spring:
         show-sql: true
 
 
+#集成springBoot-admin
+  #boot:
+   # admin:
+    #  url: http://localhost:8082
+
+# 关闭安全验证
+management:
+  security:
+    enabled: false
+
+
+
 mybatis:
   # 指定全局配置文件位置
   config-location: classpath:mybatis/mybatis-config.xml
@@ -38,7 +50,6 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   #指定实体类路径
   type-aliases-package: com.bestpay.bean
-
 
 
 
