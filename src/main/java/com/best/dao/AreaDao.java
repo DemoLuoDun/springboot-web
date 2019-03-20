@@ -13,6 +13,7 @@ public interface AreaDao {
 
     /**
      * 查询一个
+     *
      * @param id
      * @return
      */
@@ -20,9 +21,19 @@ public interface AreaDao {
 
     /**
      * 查询集合
+     *
      * @param area
      * @return
      */
     List<Area> selectList(Area area);
+
+
+    /**
+     * 新增一个
+     *
+     * @param area
+     * @return
+     */
+    int insertArea(Area area);
 
 }

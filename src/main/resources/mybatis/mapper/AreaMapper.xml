@@ -11,4 +11,8 @@
     <select id="selectList" resultType="com.best.bean.Area" parameterType="com.best.bean.Area">
         SELECT * FROM  tb_area
     </select>
+
+    <insert id="insertArea" parameterType="com.best.bean.Area">
+        INSERT INTO tb_area(area_id,area_name,priority) VALUES(#{areaId},#{areaName},#{priority})
+    </insert>
 </mapper>

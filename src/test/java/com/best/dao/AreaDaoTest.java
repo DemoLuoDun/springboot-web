@@ -34,7 +34,6 @@ public class AreaDaoTest {
         connection.close();
     }
 
-    @Ignore
     @Test
     public void selectOne(){
         Area area = areaDao.selectOne(1);
